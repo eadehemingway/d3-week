@@ -4,23 +4,27 @@
 scales can be divided into three categories:
 
 
-### 1. scales with continuous input and continuous output
+### 1. Continuous Input and Continuous Output
+E.g graphs like line graphs or scatter graphs
 ```
 const linearScale = d3.scaleLinear()
-  .domain([0.1, 1])
+  .domain([0, 50])
   .range([0, 600]);
 
-linearScale(0.1);   // returns 0
-linearScale(0.55);   // returns 300
-linearScale(1);  // returns 600
+linearScale(0);   // returns 0
+linearScale(25);   // returns 300
+linearScale(50);  // returns 600
 ```
 
-![](https://i.imgur.com/sIpt1AV.png)
+![](https://i.imgur.com/bF7yc3l.png)
 
 
 
-### 2. scales with discrete input and discrete output
 
+
+### 2. Discrete Input and Discrete Output
+
+E.g. most commonly used with bar graphs. 
 
 ```
 const myData = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -40,7 +44,7 @@ ordinalScale('Apr');  // returns 'black';
 
 
 
-### 3. scales with continuous input and discrete output
+### 3. Continuous Input and Discrete Iutput
 ```
 const quantizeScale = d3.scaleQuantize()
   .domain([0, 100])
@@ -52,20 +56,15 @@ quantizeScale(90);  // returns 'pink' because its in the fourth quarter
 ```
 ![](https://i.imgur.com/IcrBSdX.png)
 
-### Most common scales
+## Most common scales
 
-Most common scales fit into the first two categories above.
+Most common scales fit into the first two categories above
 
-for type one you need to ask if the continuous data is time or numbers, if it is time it is likely to use 
-```
-d3.scaleTime()
-```
-if it isnt time, and is numbers it is most likely to use 
-```
-d3.scaleLinear()
-```
+#### Continuous Input and Continuous Output
+with Continuous Input and Continuous Output you need to ask if the continuous data is time or numbers, if it is time it is likely to use `d3.scaleTime()` . If it isnt time, and is numbers it is most likely to use `d3.scaleLinear()`
+#### Discrete Input and Discrete Output
+for type two the most common scale is `d3.scaleOrdinal()`
 
-for type two the most common scale is 
-```
-d3.scaleOrdinal()
-```
+
+### Further reading
+https://github.com/d3/d3-scale
