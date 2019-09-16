@@ -19,17 +19,17 @@ LUNCH
 
 - [enter/exit codealong](https://github.com/eadehemingway/d3-enter-exit-codealong)
 - [enter/exit workshop](https://github.com/eadehemingway/d3-enter-exit-workshop)
-
-
-## day three
-
 - intro to scales video
 - [presentation on scales](https://github.com/eadehemingway/d3-week/blob/master/scales-intro.md)
 - [scales workshop](https://github.com/eadehemingway/d3-scales-workshop)
 
+
+## day three
+- [projects](https://github.com/eadehemingway/d3-week/blob/master/projects.md)
+
 LUNCH 
 
-- [projects](https://github.com/eadehemingway/d3-week/blob/master/projects.md)
+- projects
 
 ## day four
 
