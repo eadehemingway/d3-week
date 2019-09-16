@@ -18,3 +18,5 @@ a few suggested extra features:
 - ability to zoom into the graph 
 - ability to hide parts or show parts of the graph
 - buttons that allow the user to control the look of the graph
+
+Start off using dummy data, and if you have time replace it with real world data!
