@@ -37,6 +37,7 @@ LUNCH
 
 ## day five 
 
-- code review (allocated slots per team)
-- respond to code review
-- presentations (leave extra time to go through things thoroughly because each group will have done a different project)
+- presentations 
+
+
+
